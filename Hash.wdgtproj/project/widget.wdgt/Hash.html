@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style type="text/css" title="AppleStyle">
+        @import "Hash.css";
+    </style>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js" charset="utf-8"></script>
+    <script type="text/javascript" src="localizedStrings.js" charset="utf-8"></script>
+    <script type="text/javascript" src="webtoolkit.md5.js" charset="utf-8"></script>
+    <script type="text/javascript" src="webtoolkit.sha1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="webtoolkit.sha256.js" charset="utf-8"></script>
+    <script type="text/javascript" src="webtoolkit.crc32.js" charset="utf-8"></script>
+    <script type="text/javascript" src="webtoolkit.base64.js" charset="utf-8"></script>
+    <script type="text/javascript" src="webtoolkit.url.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Hash.js" charset="utf-8"></script>
+</head>
+<body onload="load();" style="">
+    <div id="front" style="">
+        <img id="frontImg" src="Images/front%201.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 0; image-shape: 3; image-opacity: 0.70; image-top-color: 0.0000,0.0000,0.0000; image-bottom-color: 0.6154,0.6154,0.6154; image-radius: 0,0,0,0; image-border: 1; image-border-color: 1.0000,1.0000,1.0000; image-border-width: 1; shine-on: 1; shine-strength: 0.38; shine-alpha-level: 0.51; shine-height: 0.50; glass-arc-height: 0.10; shine-over-border: 0; image-custom-above-lighting: 0; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div class="apple-no-children" id="info" apple-part="com.apple.Dashcode.part.infobutton" apple-default-image-visibility="hidden"></div>
+        <div apple-part="com.apple.Dashcode.part.lozengepopupbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 1; image-button-type: 1; image-opacity: 1.00; image-top-color: 0.2500,0.2500,0.2500; image-bottom-color: 0.2500,0.2500,0.2500; image-radius: 10,10,10,10; image-border: 1; image-border-color: 0.0000,0.0000,0.0000; image-border-width: 1; shine-on: 1; shine-strength: 0.38; shine-alpha-level: 0.51; shine-height: 0.50; glass-arc-height: 0.10; shadow-include-shadow: 0; shadow-blur: 3.00;" id="hashMethod" apple-group="popup"></div>
+        <div apple-part="com.apple.Dashcode.part.lozengetextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 1; image-button-type: 0; image-opacity: 1.00; image-top-color: 0.2500,0.2500,0.2500; image-bottom-color: 0.2500,0.2500,0.2500; image-radius: 10,10,10,10; image-border: 1; image-border-color: 0.0000,0.0000,0.0000; image-border-width: 1; shine-on: 1; shine-strength: 0.38; shine-alpha-level: 0.51; shine-height: 0.50; glass-arc-height: 0.10; shadow-include-shadow: 0; shadow-blur: 3.00;" id="clearButton" apple-group="button"></div>
+        <div apple-part="com.apple.Dashcode.part.lozengetextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 1; image-button-type: 0; image-opacity: 1.00; image-top-color: 0.2500,0.2500,0.2500; image-bottom-color: 0.2500,0.2500,0.2500; image-radius: 10,10,10,10; image-border: 1; image-border-color: 0.0000,0.0000,0.0000; image-border-width: 1; shine-on: 1; shine-strength: 0.38; shine-alpha-level: 0.51; shine-height: 0.50; glass-arc-height: 0.10; shadow-include-shadow: 0; shadow-blur: 3.00;" id="hashButton" apple-group="button"></div>
+        <input type="text" name="" value="" class="apple-textfield apple-no-children" apple-part="com.apple.Dashcode.part.textfield" id="textInput" apple-group="textfield" onkeydown="textInputKeyDown(event)">
+    </div>
+    <div id="back" style="">
+        <img id="backImg" src="Images/front%202.png" alt="" apple-locked="true" apple-part="com.apple.Dashcode.part.frontimage" apple-style="image-theme: 0; image-shape: 3; image-opacity: 0.70; image-top-color: 0.0000,0.0000,0.0000; image-bottom-color: 0.6154,0.6154,0.6154; image-radius: 0,0,0,0; image-border: 1; image-border-color: 1.0000,1.0000,1.0000; image-border-width: 1; shine-on: 1; shine-strength: 0.38; shine-alpha-level: 0.51; shine-height: 0.50; glass-arc-height: 0.10; shine-over-border: 0; image-custom-above-lighting: 0; shadow-include-shadow: 1; shadow-blur: 9.00; shadow-offset: -1.00,-6.00; shadow-color: 0.0000,0.0000,0.0000,0.3333;">
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="eosgarden" apple-group="text" onclick="websiteEosgarden(event)" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+        <div apple-part="com.apple.Dashcode.part.text" class="apple-text apple-no-children" apple-default-image-visibility="hidden" apple-text-overflow="ellipsis" id="webtoolkit" apple-group="text" onclick="websiteWebtoolkit(event)" apple-style="part-height-dependent: true;part-width-dependent: true;"></div>
+        <div apple-part="com.apple.Dashcode.part.lozengetextbutton" class="apple-no-children" apple-style="image-theme: 0; image-shape: 1; image-button-type: 0; image-opacity: 1.00; image-top-color: 0.2500,0.2500,0.2500; image-bottom-color: 0.2500,0.2500,0.2500; image-radius: 10,10,10,10; image-border: 1; image-border-color: 0.0000,0.0000,0.0000; image-border-width: 1; shine-on: 1; shine-strength: 0.38; shine-alpha-level: 0.51; shine-height: 0.50; glass-arc-height: 0.10; shadow-include-shadow: 0; shadow-blur: 3.00;" id="backButton" apple-group="button"></div>
+    </div>
+</body>
+</html>
